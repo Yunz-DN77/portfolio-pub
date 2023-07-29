@@ -1,6 +1,6 @@
 :root {
     --bg : white;
-    --prm : rgb(0, 209, 164);
+    --prm : rgb(0, 207, 207);
     --scd : rgb(0, 38, 63);
 }
 
@@ -115,6 +115,10 @@ section.hero .photo {
     justify-content: center;
 }
 
+section.hero .photo img {
+    width: 100%;
+}
+
 
 
 /* Media Query ====================================*/
@@ -188,6 +192,34 @@ section.hero .photo {
     html {
         font-size: 80%;
     }
+
+    /* Hero section */
+    section.hero {
+        display: block;
+        padding-top: 7rem;
+    }
+
+    section.hero .text {
+        width: 86%;
+        margin: auto 7%;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+    section.hero .text h1,
+    section.hero .text h2 {
+        text-align: left;
+    }
+    section.hero .text p {
+        text-align: justify;
+    }
+
+    section.hero .photo {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
 }
 
 @media (max-width : 480px){
@@ -196,5 +228,9 @@ section.hero .photo {
     }
     header nav {
         width: 60%;
+    }
+
+    section.hero .photo {
+        width: 100%;
     }
 }
