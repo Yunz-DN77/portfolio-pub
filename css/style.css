@@ -16,6 +16,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*  Navbar setting */
 header {
     display: flex;
     justify-content: space-between;
@@ -68,20 +69,60 @@ div.burger {
 }
 
 
+/* Hero section */
+section.hero {
+    display: flex;
+    height: 100vh;
+    padding-top: 4.3rem;
+}
+
+section.hero .text {
+    width: 50%;
+    margin: 10rem 4rem 10rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+section.hero .text h1 {
+    font-size: 3rem;
+    text-align: right;
+    margin-bottom: 0.2rem;
+}
+
+section.hero .text h1 span {
+    color: var(--prm);
+}
+
+section.hero .text h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+section.hero .text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+section.hero .photo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-/* Media Query */
+
+/* Media Query ====================================*/
 @media (max-width : 1080px){
     html {
         font-size: 85%;
     }
-
-    header {
-        position: relative;
-    }
-
-    /* Navigasi harus di hide */
-
+    /* Navbar setting */
     header nav {
         position: absolute;
         right: -100%;
