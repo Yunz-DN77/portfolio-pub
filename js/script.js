@@ -6,7 +6,7 @@ burger.addEventListener('click', function () {
     burger.classList.toggle('active')
 })
 
-document.addEventListener('click', function (e){
+document.addEventListener('click' && 'scroll', function (e){
     if (!burger.contains(e.target) && !nav.contains(e.target)){
         nav.classList.remove('active')
         burger.classList.remove('active')

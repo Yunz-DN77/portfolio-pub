@@ -103,9 +103,8 @@ body {
     /* Navbar end */
 
     /* Hero section start ------------------------ */
-    section.hero,
-    section.about {
-        padding: 5rem 7% 1rem;
+    section.hero {
+        padding: 10rem 7% 1rem;
     }
 
     section.hero .text h1 {
@@ -144,6 +143,12 @@ body {
     /* Hero section end */
 
     /* About section start */
+    section.about {
+        padding: 5rem 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
     section.about .text-about1 h1 {
         font-size: 1.4rem;
         margin-bottom: 1rem;
@@ -203,5 +208,22 @@ body {
     }
     section.about .text-about1 .socmed a.gh svg:hover {
         fill: #181717;
+    }
+
+    section.about .text-about2 h1 {
+        font-size: 1.2rem;
+        color: var(--scd);
+        margin-bottom: 1rem;
+    }
+
+    section.about .text-about2 h1 span {
+        color: var(--prm);
+        font-weight: 400;
+    }
+
+    section.about .text-about2 p {
+        color: var(--scd);
+        text-align: justify;
+        font-size: 0.8rem;
     }
 }
