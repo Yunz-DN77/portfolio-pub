@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -70,7 +74,7 @@ div.burger {
 
 
 /* Hero section */
-section.hero {
+section {
     display: flex;
     height: 100vh;
     padding-top: 4.3rem;
@@ -123,8 +127,93 @@ section.hero .photo img {
     width: 100%;
 }
 
+/* About Section */
+
+section.about {
+    align-items: center;
+}
+
+section.about .text-about1,
+section.about .text-about2 {
+    width: 50%;
+    margin: 7%;
+}
+
+section.about .text-about1 h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.about .text-about1 h1 span {
+    color: var(--prm);
+}
+
+section.about .text-about1 p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+section.about .text-about1 h2 {
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem auto 1rem;
+    color: var(--prm);
+}
+
+section.about .text-about1 .socmed {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section.about .text-about1 .socmed a svg {
+    fill: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
 
 
+section.about .text-about1 .socmed a:hover svg {
+    scale: 150%;
+    transition: 0.2s;
+}
+
+section.about .text-about1 .socmed a.fb:hover svg {
+    fill: #1877F2;
+}
+
+section.about .text-about1 .socmed a.ig:hover svg {
+    fill: #E4405F;
+}
+
+section.about .text-about1 .socmed a.wa:hover svg {
+    fill: #25D366;
+}
+
+section.about .text-about1 .socmed a.tg:hover svg {
+    fill: #26A5E4;
+}
+
+section.about .text-about1 .socmed a.gh:hover svg {
+    fill: #181717;
+}
+
+section.about .text-about2 h1 {
+    font-size: 1.5rem;
+}
+
+section.about .text-about2 h1 span {
+    color: var(--prm);
+}
+
+section.about .text-about2 p {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 1rem;
+}
 /* Media Query ====================================*/
 /* NoteBook +=================================================== */
 @media (max-width : 1080px){
@@ -243,4 +332,24 @@ section.hero .photo img {
     section.hero .photo {
         width: 100%;
     }
+
+    /* About section */
+    section.about {
+        display: block;
+        margin-top: 4rem;
+    }
+    section.about .text-about1,
+    section.about .text-about2 {
+        width: 86%;
+        margin: 7%;
+    }
+    section.about .text-about2 h1 {
+        font-size: 2rem;
+    }
+
+    section.about .text-about2 p {
+        font-size: 1.2rem;
+    }
+
+
 }
