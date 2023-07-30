@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*  Navbar setting */
@@ -101,6 +101,10 @@ section.hero .text h2 {
     text-align: right;
 }
 
+section.hero .text h2 span {
+    font-weight: 300;
+}
+
 section.hero .text p {
     font-size: 1rem;
     line-height: 1.7;
@@ -122,6 +126,7 @@ section.hero .photo img {
 
 
 /* Media Query ====================================*/
+/* NoteBook +=================================================== */
 @media (max-width : 1080px){
     html {
         font-size: 85%;
@@ -188,6 +193,9 @@ section.hero .photo img {
 
 }
 
+
+/*  ============================================= */
+/* Tab */
 @media (max-width : 720px){
     html {
         font-size: 80%;
@@ -222,9 +230,11 @@ section.hero .photo img {
     }
 }
 
+
+/* Handphone +++++++++=============================================== */
 @media (max-width : 480px){
     html {
-        font-size: 80%;
+        font-size: 70%;
     }
     header nav {
         width: 60%;
