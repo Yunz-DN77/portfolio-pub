@@ -2,8 +2,8 @@
     --bg : rgb(243, 254, 255);
     --prm : rgb(0, 206, 161);
     --scd : rgb(0, 11, 34);
-    --prmt : rgba(0, 250, 160, 20%);
-    --scdt : rgba(0, 11, 34, 20%);
+    --prmt : rgba(0, 250, 160, 10%);
+    --scdt : rgba(0, 11, 34, 10%);
 }
 
 /* Reset For mobile*/
